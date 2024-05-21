@@ -59,12 +59,11 @@ class _LoginState extends State<LoginView> {
                       child: Padding(
                         padding: const EdgeInsets.all(16.0),
                         child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Icon(
                               Icons.email,
                             ),
-                            Text('Entra com email'),
+                            Expanded(child: Center(child: Text('Entra com email'))),
                           ],
                         ),
                       ),
