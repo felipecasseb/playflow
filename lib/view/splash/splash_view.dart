@@ -13,9 +13,9 @@ class SplashView extends StatefulWidget {
 
 class _SplashViewState extends State<SplashView> {
   Future<void>InicialSplash()async{
-    await Future.delayed(Duration(seconds: 3));
+    await Future.delayed(const Duration(seconds: 3));
     Navigator.of(context).pushReplacement(
-      MaterialPageRoute(builder: (context)=>LoginView())
+      MaterialPageRoute(builder: (context)=>const LoginView())
     );
 
   }
@@ -30,12 +30,12 @@ class _SplashViewState extends State<SplashView> {
      return MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
-          backgroundColor: Color(0xFFFFFFFF),
+          backgroundColor: const Color(0xFFFFFFFF),
           body: Center(
             child:Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                SizedBox(height: 20.0),
+                const SizedBox(height: 20.0),
                 Image.asset(
                   'imagens/Logo_pay.png',
                   width: 242,

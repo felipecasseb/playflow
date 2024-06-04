@@ -4,7 +4,10 @@ import 'package:playflow/view/splash/splash_view.dart';
 
 void main(){
   runApp(MaterialApp(
+    theme: ThemeData(
+      visualDensity: VisualDensity.adaptivePlatformDensity,
+    ),
     debugShowCheckedModeBanner: false,
-    home: SplashView(),
+    home: const SplashView(),
   ));
 }
